@@ -26,7 +26,7 @@ class brewcask {
   }
 
   package { 'brew-cask':
-    require  => Homebrew::Tap['caskroom/cask','caskroom/versions','caskroom/fonts']
+    require  => Homebrew::Tap['caskroom/cask','caskroom/versions','caskroom/fonts'],
     provider => homebrew
   }
 
